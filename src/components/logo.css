@@ -1,0 +1,11 @@
+.logo {
+  width: 120px;              /* smaller default size */
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);     /* gentle enlargement */
+  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.5));
+}
