@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Background from "./components/Background";
 import logo from "./assets/logo.png";
@@ -248,7 +248,7 @@ function App() {
 
       {/* 🧭 Foreground Content */}
       <div className="relative z-10 text-white">
-        <Router>
+        <>
           <Navbar />
           <main className="bg-black/10 backdrop-blur-sm min-h-screen">
 
@@ -312,7 +312,7 @@ function App() {
               <path d="M20.52 3.48A11.928 11.928 0 0012 0C5.372 0 0 5.373 0 12c0 2.12.554 4.173 1.605 5.978L0 24l6.207-1.595A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12 0-3.193-1.244-6.197-3.48-8.52zM12 22c-1.9 0-3.735-.497-5.355-1.437l-.383-.222-3.68.945.984-3.584-.249-.37A9.958 9.958 0 012 12C2 6.486 6.486 2 12 2c2.673 0 5.183 1.042 7.071 2.929A9.958 9.958 0 0122 12c0 5.514-4.486 10-10 10z" />
             </svg>
           </a>     
-       </Router>
+       </>
      </div>
     </>  
   );
